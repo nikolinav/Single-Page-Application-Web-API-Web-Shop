@@ -1,0 +1,105 @@
+﻿@section Scripts {
+    @Scripts.Render("~/Scripts/novaSkripta.js")
+}
+
+<div class="row">
+
+    <div class="col-sm-4">
+        <form method="post" action="post/" id="registracija">
+            <h3>Registracija</h3>
+            <div class="form-group">
+                <label>Email</label>
+                <input class="form-control" type="text" id="regEmail" />
+            </div>
+            <div class="form-group">
+                <label>Lozinka</label>
+                <input class="form-control" type="password" id="regLoz" />
+            </div>
+            <div class="form-group">
+                <label>Potvrdi Lozinku</label>
+                <input class="form-control" type="password" id="regLoz2" />
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn btn-default">Registracija</button>
+            </div>
+            <div id="info"></div>
+        </form>
+    </div>
+
+    <div class="col-sm-4">
+        <form method="post" action="post/" id="prijava">
+            <h3>Prijava</h3>
+            <div class="form-group">
+                <label>Email</label>
+                <input class="form-control" type="text" id="priEmail" />
+            </div>
+            <div class="form-group">
+                <label>Lozinka</label>
+                <input class="form-control" type="password" id="priLoz" />
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn btn-default">Prijava</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<br />
+<div class="row">
+    <div class="col-sm-4" id="odjava">
+        <h3>Odjava</h3>
+        <button class="btn btn-default" id="odjavise">Odjava</button>
+    </div>
+</div>
+
+
+
+
+<div id="filterTable"></div>
+
+<div id="filterTablePrice"></div>
+
+<div id=" tabela1">
+    @{
+        Html.RenderPartial("Tabela");
+
+    }
+</div>
+
+<div id=" tabela2">
+    @{
+        Html.RenderPartial("TabelaPCategory");
+    }
+    
+</div>
+
+<div id="con" style="display:none">
+    @{
+        Html.RenderPartial("Filter");
+    }
+</div>
+
+<div id="createDiv" style="display:none">
+    @{
+        Html.RenderPartial("Create");
+    }
+</div>
+
+<div id="editDiv" style="display:none">
+    @{
+        Html.RenderPartial("Edit");
+    }
+</div>
+
+<div id="createDivPC" style="display:none">
+    @{
+        Html.RenderPartial("CreatePC");
+    }
+</div>
+
+<div id="editDivPC" style="display:none">
+    @{
+        Html.RenderPartial("EditPC");
+    }
+</div>
+

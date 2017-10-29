@@ -1,0 +1,29 @@
+﻿
+@{
+    ViewBag.Title = "Filter";
+}
+
+
+<h4>Prikaz svih proizvoda iz unesene kategorije</h4>
+
+    <form method='get' action='get/' id='filterForm1'></form>
+    @*<p><label>Kategorija: <input class='form-control' type='text' id='y'></label></p>*@
+<div class="form-group">
+    <label>Kategorija</label>
+    <select class="form-control" id="y"></select>
+</div>
+    <button id='btn1' class='btn btn-info'>Filtriraj</button>
+
+<div id="tabelaFilter"></div>
+
+
+<h4>Prikaz svih proizvoda od cene</h4>
+
+
+<form method='get' action='get/' id='filterForm2'></form>
+<div class="form-group">
+  <p><label>Cena: <input class='form-control' type='text' id='p'></label></p>
+</div>
+<button id='btn2' class='btn btn-info'>Filtriraj</button>
+
+<div id="tabelaFilterPrice"></div>

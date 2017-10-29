@@ -1,0 +1,22 @@
+﻿
+@section Scripts {
+    @Scripts.Render("~/Scripts/novaSkripta.js")
+}
+
+
+@{
+    ViewBag.Title = "TabelaPCategory";
+}
+
+<div id="productCategoryTable">
+    <div class="form-group">
+        <button type="submit" class="btn btn-primary btn-md" id="buttonCreatePC">CreateProductCategory</button>
+    </div>
+    <h3>Product Category</h3>
+    <table class="table table-bordered table-striped">
+        <tr>
+            <th>Name</th>
+        </tr>
+        <tbody id="podaciPC"></tbody>
+    </table>
+</div>
